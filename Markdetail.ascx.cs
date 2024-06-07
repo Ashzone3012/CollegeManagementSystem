@@ -14,11 +14,15 @@ namespace CollegeManagement_System
            commonfnx fn = new commonfnx();
             protected void Page_Load(object sender, EventArgs e)
             {
-                if (!IsPostBack)
+            //if (Session["admin"] == null)
+            //    {
+            //        Response.Redirect("../login.aspx");
+            //    }
+
+            if (!IsPostBack)
                 {
                     Getclass();
                     GetMarks();
-
                 }
             }
 

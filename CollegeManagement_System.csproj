@@ -71,7 +71,7 @@
   <ItemGroup>
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\AddClass.aspx" />
-    <Content Include="Admin\AttendanceDetails.aspx" />
+    <Content Include="Admin\StudAttendanceDetails.aspx" />
     <Content Include="Admin\ClassFees.aspx" />
     <Content Include="Admin\EmpAttendanceDetails.aspx" />
     <Content Include="Admin\EmployeeAttendance.aspx" />
@@ -92,14 +92,18 @@
     <Content Include="Content\Style.css" />
     <Content Include="Faculty\FacultyHome.aspx" />
     <Content Include="Faculty\MarksDetails.aspx" />
+    <Content Include="Faculty\StudentAttendance.aspx" />
+    <Content Include="Faculty\StudentAttendancedetails.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Image\bg1.jpg" />
     <Content Include="Image\bg2.jpg" />
     <Content Include="Image\Faculty.png" />
+    <Content Include="Image\Log .jpg" />
     <Content Include="Image\login.jpg" />
     <Content Include="Image\logo.jpg" />
     <Content Include="Image\user.png" />
     <Content Include="Image\vs_Community2019.exe" />
+    <Content Include="login.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -202,6 +206,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="StudentAttendanceUC.ascx" />
     <Content Include="Web.config" />
     <Content Include="Scripts\umd\popper.min.js.map" />
     <Content Include="Scripts\umd\popper.js.map" />
@@ -236,12 +241,12 @@
     <Compile Include="Admin\AddClass.aspx.designer.cs">
       <DependentUpon>AddClass.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AttendanceDetails.aspx.cs">
-      <DependentUpon>AttendanceDetails.aspx</DependentUpon>
+    <Compile Include="Admin\StudAttendanceDetails.aspx.cs">
+      <DependentUpon>StudAttendanceDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\AttendanceDetails.aspx.designer.cs">
-      <DependentUpon>AttendanceDetails.aspx</DependentUpon>
+    <Compile Include="Admin\StudAttendanceDetails.aspx.designer.cs">
+      <DependentUpon>StudAttendanceDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\ClassFees.aspx.cs">
       <DependentUpon>ClassFees.aspx</DependentUpon>
@@ -321,6 +326,7 @@
     <Compile Include="Admin\TeacherSubject.aspx.designer.cs">
       <DependentUpon>TeacherSubject.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Datatable.cs" />
     <Compile Include="Faculty\FacultyHome.aspx.cs">
       <DependentUpon>FacultyHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -341,8 +347,29 @@
     <Compile Include="Faculty\MarksDetails.aspx.designer.cs">
       <DependentUpon>MarksDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Faculty\StudentAttendance.aspx.cs">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\StudentAttendance.aspx.designer.cs">
+      <DependentUpon>StudentAttendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty\StudentAttendancedetails.aspx.cs">
+      <DependentUpon>StudentAttendancedetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty\StudentAttendancedetails.aspx.designer.cs">
+      <DependentUpon>StudentAttendancedetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\CommonFn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -351,6 +378,12 @@
     </Compile>
     <Compile Include="Markdetail.ascx.designer.cs">
       <DependentUpon>Markdetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendanceUC.ascx.cs">
+      <DependentUpon>StudentAttendanceUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAttendanceUC.ascx.designer.cs">
+      <DependentUpon>StudentAttendanceUC.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
